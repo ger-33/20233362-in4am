@@ -8,6 +8,10 @@ package com.geraldcalderon.model;
  *
  * @author Usuario
  */
-public class usuarioDAO {
+public class UsuarioDAO {
+    public Usuario login(String usuario, String contrasena) {
     
+        return null;
+    
+}
 }
