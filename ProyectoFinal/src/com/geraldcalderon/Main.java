@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package com.geraldcalderon;
+package com.geraldcalderon; // O el paquete donde tengas tu clase Main
 
-/**
- *
- * @author Usuario
- */
-public class Main {
+import com.geraldcalderon.view.loginView; // Importamos la vista del login
+import javafx.application.Application;
+import javafx.stage.Stage;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        // Instanciamos y abrimos la pantalla de Login
+        new loginView(); 
     }
-    
+
+    public static void main(String[] args) {
+        // launch() arranca la infraestructura de JavaFX y ejecuta el método start()
+        launch(args);
+    }
 }
